@@ -1,0 +1,9 @@
+package com.unah.examen.services;
+
+import com.unah.examen.modelos.Cliente;
+
+public interface ClienteService {
+
+    public Cliente crearCliente(Cliente cliente);
+    
+}
