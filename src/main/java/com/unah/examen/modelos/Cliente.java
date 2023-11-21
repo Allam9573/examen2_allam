@@ -35,7 +35,7 @@ public class Cliente {
     private Date fechaIngreso;
 
     @ManyToOne
-    @JoinColumn(name = "idtipocliente", referencedColumnName = "idtipocliente")
+    @JoinColumn(name = "idtipocliente")
     private TipoCliente tipoCliente;
 
 

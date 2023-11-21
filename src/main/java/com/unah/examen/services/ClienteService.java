@@ -11,6 +11,6 @@ public interface ClienteService {
 
     public List<Cliente> listarClientes();
 
-    public Optional<Cliente> buscarClienteId(int id);
+    public Cliente buscarClienteId(int id);
 
 }
