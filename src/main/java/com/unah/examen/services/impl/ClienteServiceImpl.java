@@ -1,5 +1,7 @@
 package com.unah.examen.services.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,15 +10,27 @@ import com.unah.examen.repositories.ClienteRepository;
 import com.unah.examen.services.ClienteService;
 
 @Service
-public class ClienteServiceImpl implements ClienteService{
+public class ClienteServiceImpl implements ClienteService {
 
     @Autowired
     private ClienteRepository clienteRepository;
 
     @Override
     public Cliente crearCliente(Cliente cliente) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'crearCliente'");
+        Cliente nvoCliente = this.clienteRepository.save(cliente);
+        return nvoCliente;
     }
-    
+
+    @Override
+    public List<Cliente> listarClientes() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'listarClientes'");
+    }
+
+    @Override
+    public Cliente buscarClienteId(int id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buscarClienteId'");
+    }
+
 }
