@@ -20,7 +20,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructorgit 
 public class TipoCliente {
 
     @Id
