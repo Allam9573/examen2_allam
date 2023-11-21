@@ -1,6 +1,7 @@
 package com.unah.examen.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.unah.examen.modelos.Cliente;
 
@@ -10,6 +11,6 @@ public interface ClienteService {
 
     public List<Cliente> listarClientes();
 
-    public Cliente buscarClienteId(int id);
+    public Optional<Cliente> buscarClienteId(int id);
 
 }

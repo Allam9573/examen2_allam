@@ -1,6 +1,7 @@
 package com.unah.examen.services.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,14 +24,13 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public List<Cliente> listarClientes() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarClientes'");
+        return this.clienteRepository.findAll();
     }
 
     @Override
-    public Cliente buscarClienteId(int id) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarClienteId'");
+    public Optional<Cliente> buscarClienteId(int id) {
+        Optional<Cliente> cliente = this.clienteRepository.findById(id);
+        return cliente;
     }
 
 }
