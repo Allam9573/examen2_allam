@@ -38,5 +38,4 @@ public class Cliente {
     @JoinColumn(name = "idtipocliente")
     private TipoCliente tipoCliente;
 
-
 }
