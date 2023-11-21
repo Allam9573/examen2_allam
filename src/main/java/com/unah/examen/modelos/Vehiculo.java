@@ -20,8 +20,8 @@ import lombok.Setter;
 public class Vehiculo {
 
     @Id
-    @Column(name="idvehiculo")
+    @Column(name = "idvehiculo")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idVehiculo;
-    
+
 }

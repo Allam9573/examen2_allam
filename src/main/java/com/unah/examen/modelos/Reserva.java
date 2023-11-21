@@ -1,5 +1,6 @@
 package com.unah.examen.modelos;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -27,6 +28,6 @@ public class Reserva {
     private int idReserva;
     private int dias;
     private Date fecha;
-    private double total;
+    private BigDecimal total;
 
 }
